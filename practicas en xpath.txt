@@ -1,0 +1,19 @@
+practicas en xpath
+https://books.toscrape.com/
+
+para obtener todos los titulos de la pagina 
+$x('//article[@class="product_pod"]/h3/a/@title').map(x => x.value)
+
+
+precios de libros
+$x('//article[@class="product_pod"]/div[@class="product_price"]/p[@class="price_color"]/text()').map(x=>x.wholeText)
+
+Extrae las categorias de los libros
+$x('//div[@class="side_categories"]/ul[@class="nav nav-list"]/li/ul/li/a/text()').map(x => x.wholeText)
+
+
+Obtener descriptcion de un libro en su pagina
+$x('//article[@class="product_page"]/p/text()').map(x=>x.wholeText)
+
+Obtener stock
+$x('//p[@class="instock availability"]/text()').map(x=>x.wholeText)
