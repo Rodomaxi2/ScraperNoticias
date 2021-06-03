@@ -1,0 +1,5 @@
+Links_espeficar = //h2/a[@class="finanzasSect" or @class="economiaSect" or @class=empresasSect]/@href
+Links_general = //h2/a[@*]/@href
+Titulo = //div[@class="mb-auto"]/h2/span/text()
+Resumen = //div[@class="lead"]/p/text()
+Cuerpo = //div[@class="html-content"]/p[not(@class)]/text()
